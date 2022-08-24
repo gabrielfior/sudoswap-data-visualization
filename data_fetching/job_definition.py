@@ -2,6 +2,8 @@ import os
 import sqlalchemy
 import requests
 import pandas as pd
+import dotenv
+dotenv.load_dotenv('../.env')
 
 def get_engine():
     user = os.environ['DB_USERNAME']
