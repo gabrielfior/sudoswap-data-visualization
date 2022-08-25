@@ -18,3 +18,4 @@ schedule.every(2).hours.at(":30").do(job)
 while True:
     schedule.run_pending()
     time.sleep(60)
+    logger.info("Sleeping...")
