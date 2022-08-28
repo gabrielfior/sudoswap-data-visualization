@@ -8,7 +8,7 @@ def job():
     logger.info("Getting engine")
     engine = get_engine()
     logger.info("Fetching data")
-    df = fetch_data()
+    df = fetch_data_flipside()
     logger.info("Writing trades")
     write_trades(df, engine)
     logger.info("Finished")
