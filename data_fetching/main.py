@@ -9,12 +9,12 @@ if __name__ == "__main__":
     df = fetch_data_flipside()
 
     nft_addresses = df['nft_address'].unique().tolist()
-    #df_nftbank = fetch_data_nftbank(nft_addresses)
+    df_nftbank = fetch_data_nftbank(nft_addresses)
     df_nftbank_stats = fetch_metadata_nft(nft_addresses)
 
     logger.info("Writing trades")
     write_trades(df, engine)
     logger.info("Writing nftbank data")
-    #write_nftbank_data(df_nftbank, engine)
+    write_nftbank_data(df_nftbank, engine)
     write_nftbank_stats(df_nftbank_stats, engine)
     logger.info("Finished")
