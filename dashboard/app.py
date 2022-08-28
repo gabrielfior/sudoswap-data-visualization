@@ -146,6 +146,6 @@ else:
 
     
     fig3,ax3, plot_df = plot_washtrading(trades_nft, project_ref, options)
-    tab2.dataframe(plot_df.rename(columns={'wash_trade':'num_wash_trades'}).head())
+    tab2.dataframe(plot_df.rename(columns={'wash_trade':'num_wash_trades'}))
     tab2.pyplot(fig3)
     
