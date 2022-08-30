@@ -1,6 +1,6 @@
 # Sudoswap trade analysis
 
-[Dashboard]([https://sudoswap-explorer.herokuapp.com/)
+[Dashboard](https://sudoswap-explorer.herokuapp.com/)
 
 ![](./screenshot_dashboard.png)
 
